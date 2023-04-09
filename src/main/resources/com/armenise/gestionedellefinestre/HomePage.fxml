@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.armenise.gestionedellefinestre.HomePageController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="PazienteMenu" mnemonicParsing="false" text="Paziente">
+            <items>
+              <MenuItem fx:id="RegistrazioneItem" mnemonicParsing="false" onAction="#Registrazione" text="Registrazione" />
+                  <MenuItem fx:id="ModificaItem" mnemonicParsing="false" onAction="#Modifica" text="Modifica" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ambulatorio">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu fx:id="ChiSiamoMenu" mnemonicParsing="false" text="Chi siamo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Informazioni" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane fx:id="scenePane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="202.0" layoutY="161.0" text="Home Page">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="EsciBTN" layoutX="265.0" layoutY="304.0" mnemonicParsing="false" onAction="#Esci" prefHeight="30.0" prefWidth="70.0" text="Esci" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

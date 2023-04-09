@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="scenePane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.armenise.gestionedellefinestre.RegistrazioneController">
+   <children>
+      <Label layoutX="168.0" layoutY="14.0" text="Registrazione paziente">
+         <font>
+            <Font name="Arial" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="72.0" layoutY="78.0" text="Cognome">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="102.0" layoutY="125.0" text="Nome">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="45.0" layoutY="176.0" text="Informazioni">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Cognome" layoutX="167.0" layoutY="79.0" promptText="Inserisci il testo..." />
+      <TextField fx:id="Nome" layoutX="167.0" layoutY="126.0" promptText="Inserisci il testo..." />
+      <TextArea fx:id="Informazioni" layoutX="167.0" layoutY="174.0" prefHeight="149.0" prefWidth="200.0" promptText="Inserisci il testo..." />
+      <Button layoutX="283.0" layoutY="349.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="70.0" text="Salva" />
+      <Button fx:id="CancellaBTN" layoutX="381.0" layoutY="349.0" mnemonicParsing="false" onAction="#Cancella" prefHeight="30.0" prefWidth="70.0" text="Cancella" />
+      <Button fx:id="EsciBTN" layoutX="182.0" layoutY="349.0" mnemonicParsing="false" onAction="#Esci" prefHeight="30.0" prefWidth="70.0" text="Esci" />
+   </children>
+</AnchorPane>
